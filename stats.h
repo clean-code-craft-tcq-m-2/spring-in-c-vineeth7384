@@ -5,6 +5,9 @@ struct Stats
     float min;
     float max;
 };
+
+void emailAlerter(){};
+void ledAlerter(){};
 struct Stats compute_statistics(const float* numberset, int setlength);
 
 typedef void (*alerter_funcptr)();
