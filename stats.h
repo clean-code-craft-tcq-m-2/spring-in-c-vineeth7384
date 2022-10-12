@@ -4,7 +4,7 @@ struct Stats
     float average;
     float min;
     float max;
-    float* numberset;
+    const float* numberset;
     int setlength;
 };
 
