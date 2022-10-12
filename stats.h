@@ -4,6 +4,8 @@ struct Stats
     float average;
     float min;
     float max;
+    float* numberset;
+    int setlength;
 };
 
 void emailAlerter(){};
