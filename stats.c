@@ -3,6 +3,10 @@
 #ifdef NAN
 /* NAN is supported */
 #endif
+#ifdef INFINITY
+/* INFINITY is supported */
+#endif
+
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s {0,0,0};
@@ -33,8 +37,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     else
     {
                 s.average = NAN;
-		s.min = NAN;
-		s.max = NAN;
+		s.min = s.average ;
+		s.max = s.min;
 
     }
     
