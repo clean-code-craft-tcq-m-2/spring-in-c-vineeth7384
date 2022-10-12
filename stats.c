@@ -5,7 +5,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.average = 0;
     s.min = 0;
     s.max = 0;
-    
+    setlength = 0;
+    numberset = NULL;
     return s;
 }
 
